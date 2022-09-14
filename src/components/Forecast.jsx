@@ -4,7 +4,7 @@ import { iconUrlFromCode } from "../services/WeatherService";
 function Forecast({ title, items }) {
   console.log(items);
   return (
-    <div>
+    <div className="bg-slate-500">
       <div className="flex items-center justify-start mt-6">
         <p className="text-white font-medium uppercase">{title}</p>
       </div>

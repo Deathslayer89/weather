@@ -56,7 +56,7 @@ function TemperatureAndDetails({
         <p className="font-light">
           Rise:{" "}
           <span className="font-medium ml-1">
-            {formatToLocalTime(sunrise, timezone, "hh:mm a")}
+            {formatToLocalTime(sunrise*1000, timezone, "hh:mm A")}
           </span>
         </p>
         <p className="font-light">|</p>
@@ -65,7 +65,7 @@ function TemperatureAndDetails({
         <p className="font-light">
           Set:{" "}
           <span className="font-medium ml-1">
-            {formatToLocalTime(sunset, timezone, "hh:mm a")}
+            {formatToLocalTime(sunset*1000, timezone, "hh:mm A")}
           </span>
         </p>
         <p className="font-light">|</p>
